@@ -1,0 +1,6 @@
+# #!/usr/bin/env sh
+# . "$(dirname -- "$0")/_/husky.sh"
+
+# docker build -t react-app-optimized .
+# docker tag react-app-optimized akshay6361/react_app
+# docker push akshay6361/react_app

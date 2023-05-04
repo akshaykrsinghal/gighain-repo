@@ -1,0 +1,24 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    # - run: docker pull akshay6361/react_app
+    # - run : docker rm $(docker stop $(docker ps -a -q --filter ancestor=akshay6361/react_app))
+    # - run : docker run -d -p 3000:3000 akshay6361/react_app
