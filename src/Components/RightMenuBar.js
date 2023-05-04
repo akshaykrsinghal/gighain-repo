@@ -37,7 +37,7 @@ function RightMenuBar() {
 
   return (
     <RightWrapper>
-      <TitleWrapper>Gig Execution Module with Docker jenkins new 123</TitleWrapper>
+      <TitleWrapper>Gig Execution Module with Docker jenkins new 123 jenkins</TitleWrapper>
       <SubHeading>Allocate Gigs, Track Execution, Track Execution by Giggers</SubHeading>
       <MenuWrapper>
         {
